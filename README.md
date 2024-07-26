@@ -1,8 +1,6 @@
 # ITCS 6162 KDD Group 1
 Repository for group project documentation
 
-## Github repository
-
 
 ## Team Members
 Teja Swaroop Sayya<br>
