@@ -1,77 +1,70 @@
-Deliverable 1
+# ITCS 6162 KDD Group 1
+Repository for group project documentation
 
-Team Members:
-
-Julie Berryhill
-Manoj Aitha
-Gabriel Van Dreel
-Tammy Ziegler
-Dasha Rizvanova
-
-Project Introduction:
-Group 4 decided that they would like to research the possibility of whether an individual could change their lifestyle factors in time to reduce or eliminate the onset of Alzheimer's. For example, if an individual knew that a healthier diet could reduce their chance of a positive diagnosis, then they may put eating healthier as an earlier priority in their lives. This dataset includes many lifestyle factors (BMI, smoking status, alcohol consumption, physical activity, diet quality, and sleep quality) that will help in building predictive and prescriptive objectives.
-We will be using supervised learning methods as the diagnosis of Alzheimer's is a known outcome in this dataset. We will be looking into classification, clustering, and feature selection to identify and select the most relevant features to improve the predictive models. By using these approaches, group 4 hopes that this research will uncover any insights of lifestyle risk factors for developing Alzheimer’s and which lifestyle factor modifications could mitigate those risks.
-Research Question:
-
-Are there any lifestyle factors that could be changed to reduce or eliminate the onset of Alzheimers?
-https://www.cdc.gov/aging/publications/features/lower-your-dementia-risk/index.html
-https://www.medicalnewstoday.com/articles/4-lifestyle-changes-may-improve-cognitive-function-slow-alzheimers
-https://edition.cnn.com/2024/06/07/health/alzheimers-dementia-ornish-lifestyle-wellness/index.html
-https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset?resource=download
+## Github repository
 
 
+## Team Members
+Teja Swaroop Sayya<br>
+Venkata Kiran karnam<br>
+Ramesh Venkat Reddy Konda<br>
+Ruchitha Reddy Katta<br>
+Rohith Reddy Alla<br>
 
-Gabriel Van Dreel: What are the most influential predictors for a diagnosis of Alzheimer's disease?
 
-Julie Berryhill: Are people more at risk based on gender and/or ethnicity? Are there reasons to believe that physically fit individuals with a healthier diet are less at risk?
+## Introduction of Project
+The dataset we are working with comes from a detailed study on Alzheimer's Disease in elderly patients. It includes information on people aged 60 to 90 from different backgrounds and education levels. The data covers a wide range of factors such as BMI, smoking habits, alcohol use, physical activity, diet, sleep quality, medical history, blood pressure, cholesterol levels, cognitive test scores (like MMSE), and various symptoms and diagnoses related to Alzheimer's Disease.
 
-Dasha Rizvanova: 
+Our main goal is to build models that can predict whether someone will be diagnosed with Alzheimer's Disease based on this information. We'll use different types of classification algorithms, like logistic regression, decision trees, random forests, and gradient boosting, to do this. We will also look for the most important factors that influence the risk of getting Alzheimer's. The results from this work could help in detecting Alzheimer's Disease early and improving how it is managed and treated.
 
-How do factors such as alcohol consumption, age, ethnic background, and medical history influence the risk of being diagnosed with Alzheimer's Disease? 
+### Problem Understanding
+This analysis will focus on identifying the characteristics of people who are diagnosed with Alzhiemers disease.
 
-Most importantly, can we develop a model to identify individuals at risk based on these factors?
+#### Research Question
+How do factors like alcohol consumption, age, ethnic background, and medical history affect the risk of developing Alzheimer's disease? Can these variables be used to create a model that identifies individuals at high risk for the condition? What potential benefits could such a model offer for early intervention and care?
 
-Tammy Questions
+https://www.washingtonpost.com/wellness/2024/03/27/dementia-aging-risk-brain-diabetes-pollution-alcohol/
+
 What characteristics are most common in people who become diagnosed with Alzheimer's disease?
-
-
 Which of the characteristics can be identified prior to the onset of the disease?
 https://www.nia.nih.gov/health/alzheimers-and-dementia/alzheimers-disease-fact-sheet https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8927715/
-Dasha Questions
-How do factors such as alcohol consumption, age, ethnic background, and medical history influence the risk of being diagnosed with Alzheimer's Disease? Most importantly, can we develop a model to identify individuals at risk based on these factors?
 
- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10253673/ https://www.washingtonpost.com/wellness/2024/03/27/dementia-aging-risk-brain-diabetes-pollution-alcohol/
-
-
-
-Relevant Domain Information:
-
-Data Source and Description:
+### Data Source and Description:
 
 The Alzheimer’s Disease Dataset was selected:
 https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset?select=alzheimers_disease_data.csv
 
-The dataset consists of 2150 entries detailing various physiological characteristics of patients who were considered for an Alzheimer’s disease diagnosis and whether they were formally diagnosed with the illness. Some of the data such as the gender and ethnicity columns is categorical while other data is numeric and represents either an index for a rating of some condition such as sleep quality or a direct measurement of some physical characteristic such as cholesterol. All of the numeric data points could be considered time series data with respect to age. Some columns in the dataset such as the name of the doctor in charge of a given patient, however, have been sanitized and provide no meaningful information.
+The dataset contains information on 2,150 patients who were checked for Alzheimer's Disease, noting whether they were diagnosed with the illness. Some data, like gender and ethnicity, are categories, while other information includes numbers that rate conditions like sleep quality or measure things like cholesterol levels. These numbers change over time as patients age. Some parts of the dataset, such as the doctor's name, have been removed and don't provide useful information.
 
-Data Understanding and EDA:
-
-We learned that Lifestyle and Cognitive features seem to have more of a correlation for Alzheimer's prediction.
+This dataset helps us understand how different factors are related to the risk of Alzheimer's Disease. By analyzing it, we can develop models to predict the likelihood of a diagnosis, which could lead to better early detection and treatment strategies.
 
 
-Data Preparation:
+### Data Understanding and EDA:
+Certainly! It seems that lifestyle factors and cognitive features are more strongly correlated with the prediction of Alzheimer's disease. This suggests that how a person lives and their cognitive abilities may provide important clues about their risk of developing Alzheimer's.
 
+
+##### Exploratory Data Analysis (EDA) reveals key insights:
+- Age: Most patients are between 70-80 years old.
+- Gender: Comparison of Alzheimer's diagnoses between males and females.
+- Ethnicity and Education: Analysis of diagnosis rates across ethnic groups and education levels.
+- Lifestyle Factors: Box plots showing BMI, alcohol consumption, physical activity, diet, and sleep quality differences by diagnosis status.
+- Medical History: Prevalence of medical conditions in diagnosed vs. non-diagnosed patients.
+- Clinical Measurements: Blood pressure and cholesterol level distributions.
+- Cognitive Assessments : Differences in MMSE, functional assessment, and ADL scores.
+- Symptoms: Frequency of confusion, disorientation, and other symptoms in diagnosed patients.
+
+These insights inform the selection of features and algorithms for predictive modeling. 
+
+
+
+
+### Data Preparation
 The categorical columns of the Alzheimer’s Disease Dataset could be one-hot encoded during data preprocessing. Any of the numeric columns could be standardized such that they reflect a normal distribution if they are found to be normally distributed while others could be linearly scaled to reduce the effect of bias in any machine learning models for the dataset. The sanitized columns in the dataset could also be dropped since they provide no useful information.
 
-
-Citation
-If you use this dataset in your work, please cite it as follows:
-@misc{rabie_el_kharoua_2024,
-title={Alzheimer's Disease Dataset},
-url={https://www.kaggle.com/dsv/8668279},
-DOI={10.34740/KAGGLE/DSV/8668279},
-publisher={Kaggle},
-author={Rabie El Kharoua},
-year={2024}
-}
+##### Data  
+- We are removing the columns PatientId and DoctorInCharge
+- Data is highly weighted to non-smokers. Looking to see if there is a correlation between smoking data to non smokers.
+- Family history. Also highly weighted.  Look for a correlation.
+- The medical history tends to focus on the negative aspects of each condition. It might be helpful to look for any patterns or connections between them. Additionally, memory complaints and behavioral problems are very subjective and might be better to leave out.
 
 
