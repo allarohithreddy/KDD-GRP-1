@@ -2,9 +2,9 @@
 
 Team Members:
 
-Teja Swaroop Sayya
-Venkata Kiran karnam
-Ramesh Venkat Reddy Konda
-Ruchitha Reddy Katta
-Rohith Reddy Alla
+Teja Swaroop Sayya<br>
+Venkata Kiran karnam<br>
+Ramesh Venkat Reddy Konda<br>
+Ruchitha Reddy Katta<br>
+Rohith Reddy Alla<br>
 
