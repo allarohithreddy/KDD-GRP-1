@@ -40,11 +40,12 @@ This dataset helps us understand how different factors are related to the risk o
 
 
 ### Data Understanding and EDA:
-Certainly! It seems that lifestyle factors and cognitive features are more strongly correlated with the prediction of Alzheimer's disease. This suggests that how a person lives and their cognitive abilities may provide important clues about their risk of developing Alzheimer's.
-
+We identified different attributes to gain an understanding of the dataset. 
+The lifestyle factors and cognitive features are more strongly correlated with the prediction of Alzheimer's disease.
+This suggests that how a person lives and their cognitive abilities may provide important clues about their risk of developing Alzheimer's.
 
 ##### Exploratory Data Analysis (EDA) reveals key insights:
-- Age: Most patients are between 70-80 years old.
+- Age: Most patients are between 70-80 years old. 
 - Gender: Comparison of Alzheimer's diagnoses between males and females.
 - Ethnicity and Education: Analysis of diagnosis rates across ethnic groups and education levels.
 - Lifestyle Factors: Box plots showing BMI, alcohol consumption, physical activity, diet, and sleep quality differences by diagnosis status.
@@ -53,7 +54,7 @@ Certainly! It seems that lifestyle factors and cognitive features are more stron
 - Cognitive Assessments : Differences in MMSE, functional assessment, and ADL scores.
 - Symptoms: Frequency of confusion, disorientation, and other symptoms in diagnosed patients.
 
-These insights inform the selection of features and algorithms for predictive modeling. 
+These insights inform the selection of features and algorithms for predictive modelling. 
 
 
 
