@@ -1,7 +1,5 @@
-# ITCS 6162 KDD Group 1
-Repository for group project documentation
-
-## Github repository
+# Alzheimer's Predictive Analytics
+## ITCS 6162 KDD Group 1
 
 
 ## Team Members
