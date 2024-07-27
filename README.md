@@ -20,7 +20,7 @@ Our main goal is to build models that can predict whether someone will be diagno
 ### Problem Understanding
 This analysis will focus on identifying the characteristics of people who are diagnosed with Alzhiemers disease.
 
-#### Research Question
+### Research Question
 How do factors like alcohol consumption, age, ethnic background, and medical history affect the risk of developing Alzheimer's disease? Can these variables be used to create a model that identifies individuals at high risk for the condition? What potential benefits could such a model offer for early intervention and care?
 
 https://www.washingtonpost.com/wellness/2024/03/27/dementia-aging-risk-brain-diabetes-pollution-alcohol/
