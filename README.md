@@ -15,10 +15,10 @@ Rohith Reddy Alla<br>
 ## Project Introduction 
 The dataset we are working with comes from a detailed study on Alzheimer's Disease in elderly patients. It includes information on people aged 60 to 90 from different backgrounds and education levels. The data covers a wide range of factors such as BMI, smoking habits, alcohol use, physical activity, diet, sleep quality, medical history, blood pressure, cholesterol levels, cognitive test scores (like MMSE), and various symptoms and diagnoses related to Alzheimer's Disease.
 
-Our main goal is to build models that can predict whether someone will be diagnosed with Alzheimer's Disease based on this information. We'll use different types of classification algorithms, like logistic regression, decision trees, random forests, and gradient boosting, to do this. We will also look for the most important factors that influence the risk of getting Alzheimer's. The results from this work could help in detecting Alzheimer's Disease early and improving how it is managed and treated.
+Our main goal is to build models that can predict whether someone will be diagnosed with Alzheimer's Disease based on this information. We'll use different types of classification algorithms, like logistic regression, decision trees, random forests, and gradient boosting, to do this. We will also look for the most important factors influencing the risk of Alzheimer's. The results from this work could help detect Alzheimer's disease early and improve how it is managed and treated.
 
 ### Problem Understanding
-This analysis will focus on identifying the characteristics of people who are diagnosed with Alzhiemers disease.
+This analysis will focus on identifying the characteristics of people who are diagnosed with Alzheimer's disease.
 
 ### Research Question
 How do factors like alcohol consumption, age, ethnic background, and medical history affect the risk of developing Alzheimer's disease? Can these variables be used to create a model that identifies individuals at high risk for the condition? What potential benefits could such a model offer for early intervention and care?
@@ -45,16 +45,27 @@ The lifestyle factors and cognitive features are more strongly correlated with t
 This suggests that how a person lives and their cognitive abilities may provide important clues about their risk of developing Alzheimer's.
 
 ##### Exploratory Data Analysis (EDA) reveals key insights:
-- Age: Most patients are between 70-80 years old. 
+- Age: Most patients are in this age Group [61, 68, 75, 82, 89].
 - Gender: Comparison of Alzheimer's diagnoses between males and females.
 - Ethnicity and Education: Analysis of diagnosis rates across ethnic groups and education levels.
+- 0: Caucasian
+- 1: African American
+- 2: Asian
+- 3: Other
+EducationLevel: The education level of the patients, coded as follows:
+- 0: None
+- 1: High School
+- 2: Bachelor's
+- 3: Higher
 - Lifestyle Factors: Box plots showing BMI, alcohol consumption, physical activity, diet, and sleep quality differences by diagnosis status.
 - Medical History: Prevalence of medical conditions in diagnosed vs. non-diagnosed patients.
 - Clinical Measurements: Blood pressure and cholesterol level distributions.
-- Cognitive Assessments : Differences in MMSE, functional assessment, and ADL scores.
+- Cognitive Assessments: Differences in MMSE, functional assessment, and ADL scores.
 - Symptoms: Frequency of confusion, disorientation, and other symptoms in diagnosed patients.
 
 These insights inform the selection of features and algorithms for predictive modelling. 
+
+
 
 
 
