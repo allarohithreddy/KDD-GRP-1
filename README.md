@@ -56,6 +56,7 @@ This suggests that how a person lives and their cognitive abilities may provide 
 - 1: African American
 - 2: Asian
 - 3: Other
+  
 ![ethnicity](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/enthnicity.png)
 
 
@@ -64,6 +65,7 @@ EducationLevel: The education level of the patients, coded as follows:
 - 1: High School
 - 2: Bachelor's
 - 3: Higher
+  
 ![Education](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/education.png)
 
 
