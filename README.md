@@ -147,29 +147,124 @@ The categorical columns of the Alzheimer’s Disease Dataset could be one-hot en
 
 Initial Models
   - Trained and evaluated the following models using all variables except the target variable ('Performance Impact') as predictors:
-    - Logistic Regression: 0.52 accuracy
-    - Decision Tree: 0.65 accuracy
-    - Random Forest: 0.73 accuracy
-    - K-Nearest Neighbors: 0.50 accuracy
+    - Gradient Boosting Classifier: 95.356 accuracy
+    - Random Forest: 87.61 accuracy
+    - Logistic Regression: 80.18 accuracy
+    - K-Nearest Neighbors: 57.89 accuracy
+
+Pycaret Exploration
+  - Implemented and explored Pycaret for automated machine learning
+
 Feature Selection
-  - Used SelectKBest() to choose the best 10 features and re-trained the models:
-    - Logistic Regression: 0.34 accuracy
-    - Decision Tree: 0.73 accuracy
-    - Random Forest: 0.71 accuracy
-    - K-Nearest Neighbors: 0.60 accuracy
+  - Used PyCaret to choose the best 10 features and re-trained the models:
+    - Extreme Gradient Boosting: 0.96 accuracy
+    - Logistic Regression: 0.85 accuracy
+    - Decision Tree: 0.94 accuracy
+    - Random Forest: 0.95 accuracy
+    - K-Nearest Neighbors: 0.90 accuracy
+
+
 Narrowed down the best features to:
-    - 'Daily usages'
-    - 'Usage distraction'
-    - 'Usage symptoms'
-    - 'Symptom frequency'
-    - 'Health rating'
+    - 'FunctionalAssessment '
+    - 'ADL'
+    - 'MMSE'
+    - 'MemoryComplaints'
+    - 'BehavioralProblems'
+    - 'CholesterolTotal'
+    - 'CholesterolTriglycerides'
+    - 'BMI'
+    - 'SleepQuality'
+    - 'Age'
+
+
 Hyperparameter Tuning
   - Used GridSearchCV() to tune hyperparameters for each model using all variables except the target variable:
     -  Resulted in lower accuracy scores
+   
+
 Used GridSearchCV() to tune hyperparameters for each model using the narrowed-down predictors list:
   - Logistic Regression: 0.23 accuracy
   - Decision Tree: 0.65 accuracy
   - Random Forest: 0.71 accuracy
   - K-Nearest Neighbors: 0.63 accuracy
-Pycaret Exploration
-  - Implemented and explored Pycaret for automated machine learning
+
+
+
+### Evaluation
+  Evaluation Metrics
+- Accuracy: measures the overall correctness of the classification model
+  - Proportion of total correct predictions to the total number of predictions
+- Recall: measures how well the model identifies students correctly in each category
+  - For each category, recall = (number of correct predictions) / (actual number of students in that category)
+- Precision: measures the accuracy of the model's predictions for each category
+  - For each category, precision = (number of correct predictions) / (total number of predictions in that category)
+- F1-Score: combines precision and recall into a single metric for each category
+  - Useful when there is an imbalance in the dataset
+- Support: indicates the number of students in each performance impact category in the dataset
+  - Provides context for evaluating recall, precision, and F1-score
+
+
+The accuracy scores and classification reports for the highest-performing models can be seen below. 
+
+
+![Accuracy](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/Accuracy.png)
+
+
+
+The evaluation metrics for several other models using Pycaret are provided in the below diagram. From this, we can observe that Extra Trees Classifier and Extreme Gradient Boosting have the best accuracy.
+
+
+
+
+![allmodelaccuracy](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/allmodelaccuracy.png)
+
+
+
+
+### Conclusion / Results
+
+
+In this project, we explored various machine learning models to predict [target variable - Diagnosis] using the [Alzheimer's Disease] dataset. After preparing the data, we experimented with different models including [Random Forest], [Logistic Regression], and [K-Nearest Neighbors] using PyCaret.
+
+The best performing model was [Extreme Gradient Boosting], which achieved an accuracy of [96.08%] and an AUC-ROC score of [98.96%]. This model was able to Identifiy top 10 features that causes Alzheimer's
+
+  1. Functional Assessment
+  2. ADL
+  3. MMSE
+
+Some of the key insights from our analysis include:
+
+  - the ADL, MMSE, and FunctionalAssessment are the most important features
+  - Features like CholesterolTotal, SleepQuality, and BMI have much lower importance scores
+
+Overall, the project demonstrated that the best model for predicting Alzheimer's Desease based on the given dataset is Gradient Boosting Classifier, achieving up to 96.08% accuracy.
+
+
+
+
+### Known Issues:
+
+Despite the successes of the project, several issues were encountered:
+
+  1. Data Quality:
+
+    - The dataset contained outliers that could affect model performance.
+
+  2. Model Limitations:
+
+    - The models may not generalize well to unseen data due to overfitting on the training set.
+    - The dataset was imbalanced, which might have affected the performance of certain models, especially in predicting minority classes.
+
+  3. Bias and Variance:
+
+    - The models might have inherent biases due to the nature of the dataset.
+    - There was a trade-off between bias and variance in the models, affecting their predictive power.
+
+  4. Feature Selection:
+
+    - Some features may not have contributed significantly to the model, leading to potential overfitting.
+    - There were challenges in selecting the most relevant features due to multicollinearity.
+
+    
+Future work should address these issues by collecting more data, using different imputation methods, pre-processing data rigorously applying more robust cross-validation techniques, and exploring advanced feature selection methods.
+
