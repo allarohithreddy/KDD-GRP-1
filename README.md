@@ -47,7 +47,11 @@ This suggests that how a person lives and their cognitive abilities may provide 
 ##### Exploratory Data Analysis (EDA) reveals key insights:
 - Age: Most patients are in this age Group [61, 68, 75, 82, 89].
 ![age](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/age.png)
-  
+
+
+![agee](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/symptom_counts.png)
+
+
 - Gender: Comparison of Alzheimer's diagnoses between males and females.
 ![gender](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/gender.png)
   
@@ -94,6 +98,8 @@ EducationLevel: The education level of the patients, coded as follows:
 - Clinical Measurements: Blood pressure and cholesterol level distributions.
 - Cognitive Assessments: Differences in MMSE, functional assessment, and ADL scores.
 - Symptoms: Frequency of confusion, disorientation, and other symptoms in diagnosed patients.
+
+
 
 These insights inform the selection of features and algorithms for predictive modelling. 
 
