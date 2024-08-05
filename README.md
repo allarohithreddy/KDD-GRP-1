@@ -46,6 +46,7 @@ This suggests that how a person lives and their cognitive abilities may provide 
 
 ##### Exploratory Data Analysis (EDA) reveals key insights:
 - Age: Most patients are in this age Group [61, 68, 75, 82, 89].
+- ![alt text](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/age.png)
 - Gender: Comparison of Alzheimer's diagnoses between males and females.
 - Ethnicity and Education: Analysis of diagnosis rates across ethnic groups and education levels.
 - 0: Caucasian
