@@ -114,19 +114,19 @@ These insights inform the selection of features and algorithms for predictive mo
 We import libraries like numpy, pandas, seaborn, and matplotlib for data manipulation and visualization.
 The csv data is loaded into into a pandas DataFrame using the pd.read_csv function.
 
-Data Inspection:
-  Used df.info() to display basic information about the dataset, including:
-    Number of non-null entries
-    Data types of the columns
-    Memory usage
-Handling Null Values:
-  Checked for null values in the dataset
-  Dropped the small number of null values found
-Data Cleaning:
-  Cleaned the column names using the .strip() function to remove extra spaces
-Data Preprocessing:
-  Used LabelEncoder() to encode categorical variables
-  Applied SMOTE (Synthetic Minority Over-sampling Technique) to balance the data
+- Data Inspection:
+  - Used df.info() to display basic information about the dataset, including:
+    - Number of non-null entries
+    - Data types of the columns
+    - Memory usage
+- Handling Null Values:
+  - Checked for null values in the dataset
+  - Dropped the small number of null values found
+- Data Cleaning:
+  - Cleaned the column names using the .strip() function to remove extra spaces
+- Data Preprocessing:
+  - Used LabelEncoder() to encode categorical variables
+  - Applied SMOTE (Synthetic Minority Over-sampling Technique) to balance the data
 These initial steps ensure that the data is ready for further analysis, manipulation, and modeling.
 
 The categorical columns of the Alzheimer’s Disease Dataset could be one-hot encoded during data preprocessing. Any of the numeric columns could be standardized such that they reflect a normal distribution if they are found to be normally distributed while others could be linearly scaled to reduce the effect of bias in any machine learning models for the dataset. The sanitized columns in the dataset could also be dropped since they provide no useful information.
