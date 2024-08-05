@@ -139,3 +139,37 @@ These initial steps ensure that the data is ready for further analysis, manipula
 
 
 The categorical columns of the Alzheimer’s Disease Dataset could be one-hot encoded during data preprocessing. Any of the numeric columns could be standardized such that they reflect a normal distribution if they are found to be normally distributed while others could be linearly scaled to reduce the effect of bias in any machine learning models for the dataset. The sanitized columns in the dataset could also be dropped since they provide no useful information.
+
+
+
+
+### Modelling
+
+Initial Models
+  - Trained and evaluated the following models using all variables except the target variable ('Performance Impact') as predictors:
+    - Logistic Regression: 0.52 accuracy
+    - Decision Tree: 0.65 accuracy
+    - Random Forest: 0.73 accuracy
+    - K-Nearest Neighbors: 0.50 accuracy
+Feature Selection
+  - Used SelectKBest() to choose the best 10 features and re-trained the models:
+    - Logistic Regression: 0.34 accuracy
+    - Decision Tree: 0.73 accuracy
+    - Random Forest: 0.71 accuracy
+    - K-Nearest Neighbors: 0.60 accuracy
+Narrowed down the best features to:
+    - 'Daily usages'
+    - 'Usage distraction'
+    - 'Usage symptoms'
+    - 'Symptom frequency'
+    - 'Health rating'
+Hyperparameter Tuning
+  - Used GridSearchCV() to tune hyperparameters for each model using all variables except the target variable:
+    -  Resulted in lower accuracy scores
+Used GridSearchCV() to tune hyperparameters for each model using the narrowed-down predictors list:
+  - Logistic Regression: 0.23 accuracy
+  - Decision Tree: 0.65 accuracy
+  - Random Forest: 0.71 accuracy
+  - K-Nearest Neighbors: 0.63 accuracy
+Pycaret Exploration
+  - Implemented and explored Pycaret for automated machine learning
