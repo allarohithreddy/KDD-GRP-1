@@ -71,6 +71,8 @@ EducationLevel: The education level of the patients, coded as follows:
 
 
 - Lifestyle Factors: Box plots showing BMI, alcohol consumption, physical activity, diet, and sleep quality differences by diagnosis status.
+
+
 ![lifestyle](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/smoking.png)
 
 ![lifestyle](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/AlchoholConsumption.png)
