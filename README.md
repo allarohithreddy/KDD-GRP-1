@@ -111,6 +111,7 @@ These insights inform the selection of features and algorithms for predictive mo
 
 
 ### Data Preparation
+### Data Pre-Processing
 We import libraries like numpy, pandas, seaborn, and matplotlib for data manipulation and visualization.
 The csv data is loaded into into a pandas DataFrame using the pd.read_csv function.
 
