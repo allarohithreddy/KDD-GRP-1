@@ -46,20 +46,45 @@ This suggests that how a person lives and their cognitive abilities may provide 
 
 ##### Exploratory Data Analysis (EDA) reveals key insights:
 - Age: Most patients are in this age Group [61, 68, 75, 82, 89].
-- ![alt text](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/age.png)
+![age](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/age.png)
+  
 - Gender: Comparison of Alzheimer's diagnoses between males and females.
+![gender](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/gender.png)
+  
 - Ethnicity and Education: Analysis of diagnosis rates across ethnic groups and education levels.
 - 0: Caucasian
 - 1: African American
 - 2: Asian
 - 3: Other
+![ethnicity](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/enthnicity.png)
+
+
 EducationLevel: The education level of the patients, coded as follows:
 - 0: None
 - 1: High School
 - 2: Bachelor's
 - 3: Higher
+![Education](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/education.png)
+
+
+
 - Lifestyle Factors: Box plots showing BMI, alcohol consumption, physical activity, diet, and sleep quality differences by diagnosis status.
+![lifestyle](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/smoking.png)
+
+![lifestyle](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/AlchoholConsumption.png)
+
+![lifestyle](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/Physical%20Activity.png)
+
+![lifestyle](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/BMI.png)
+
+![lifestyle](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/SleppQuality.png)
+
+
 - Medical History: Prevalence of medical conditions in diagnosed vs. non-diagnosed patients.
+![Behavioural Problems](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/Diagnosis.png)
+
+![memory complaints](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/memorycomplaints.png)
+
 - Clinical Measurements: Blood pressure and cholesterol level distributions.
 - Cognitive Assessments: Differences in MMSE, functional assessment, and ADL scores.
 - Symptoms: Frequency of confusion, disorientation, and other symptoms in diagnosed patients.
