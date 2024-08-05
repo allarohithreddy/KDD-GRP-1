@@ -85,6 +85,8 @@ EducationLevel: The education level of the patients, coded as follows:
 
 
 - Medical History: Prevalence of medical conditions in diagnosed vs. non-diagnosed patients.
+
+
 ![Behavioural Problems](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/Diagnosis.png)
 
 ![memory complaints](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/memorycomplaints.png)
