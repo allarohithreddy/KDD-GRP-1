@@ -248,22 +248,22 @@ Despite the successes of the project, several issues were encountered:
 
   1. Data Quality:
 
-    - The dataset contained outliers that could affect model performance.
+   - The dataset contained outliers that could affect model performance.
 
   2. Model Limitations:
 
-    - The models may not generalize well to unseen data due to overfitting on the training set.
-    - The dataset was imbalanced, which might have affected the performance of certain models, especially in predicting minority classes.
+   - The models may not generalize well to unseen data due to overfitting on the training set.
+   - The dataset was imbalanced, which might have affected the performance of certain models, especially in predicting minority classes.
 
   3. Bias and Variance:
 
-    - The models might have inherent biases due to the nature of the dataset.
-    - There was a trade-off between bias and variance in the models, affecting their predictive power.
+   - The models might have inherent biases due to the nature of the dataset.
+   - There was a trade-off between bias and variance in the models, affecting their predictive power.
 
   4. Feature Selection:
 
-    - Some features may not have contributed significantly to the model, leading to potential overfitting.
-    - There were challenges in selecting the most relevant features due to multicollinearity.
+   - Some features may not have contributed significantly to the model, leading to potential overfitting.
+   - There were challenges in selecting the most relevant features due to multicollinearity.
 
     
 Future work should address these issues by collecting more data, using different imputation methods, pre-processing data rigorously applying more robust cross-validation techniques, and exploring advanced feature selection methods.
