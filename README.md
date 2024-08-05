@@ -110,8 +110,8 @@ These insights inform the selection of features and algorithms for predictive mo
 
 
 
-### Data Preparation
-### Data Pre-Processing
+# Data Preparation
+# Data Pre-Processing
 We import libraries like numpy, pandas, seaborn, and matplotlib for data manipulation and visualization.
 The csv data is loaded into into a pandas DataFrame using the pd.read_csv function.
 
@@ -143,7 +143,7 @@ The categorical columns of the Alzheimer’s Disease Dataset could be one-hot en
 
 
 
-### Modelling
+# Modelling
 
 Initial Models
   - Trained and evaluated the following models using all variables except the target variable ('Performance Impact') as predictors:
@@ -190,7 +190,8 @@ Used GridSearchCV() to tune hyperparameters for each model using the narrowed-do
 
 
 
-### Evaluation
+# Evaluation
+ 
   Evaluation Metrics
 - Accuracy: measures the overall correctness of the classification model
   - Proportion of total correct predictions to the total number of predictions
@@ -221,7 +222,7 @@ The evaluation metrics for several other models using Pycaret are provided in th
 
 
 
-### Conclusion / Results
+# Conclusion / Results
 
 
 In this project, we explored various machine learning models to predict [target variable - Diagnosis] using the [Alzheimer's Disease] dataset. After preparing the data, we experimented with different models including [Random Forest], [Logistic Regression], and [K-Nearest Neighbors] using PyCaret.
