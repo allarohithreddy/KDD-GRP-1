@@ -105,7 +105,7 @@ EducationLevel: The education level of the patients, coded as follows:
 
 These insights inform the selection of features and algorithms for predictive modelling. 
 
-
+![insights](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/insights.png)
 
 
 
