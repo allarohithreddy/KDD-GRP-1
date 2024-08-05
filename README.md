@@ -49,6 +49,8 @@ This suggests that how a person lives and their cognitive abilities may provide 
 ![age](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/age.png)
 
 
+As Data is Huge took only the age bracket between 70 to 73. **outliers are high**.
+
 ![agee](https://github.com/allarohithreddy/KDD-GRP-1/blob/main/assets/symptom_counts.png)
 
 
