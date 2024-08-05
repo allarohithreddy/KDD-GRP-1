@@ -242,7 +242,7 @@ Overall, the project demonstrated that the best model for predicting Alzheimer's
 
 
 
-### Known Issues:
+# Known Issues:
 
 Despite the successes of the project, several issues were encountered:
 
