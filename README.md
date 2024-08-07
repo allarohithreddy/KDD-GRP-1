@@ -2,6 +2,10 @@
 ## ITCS 6162 KDD Group 1
 
 
+Here is a Video Presentation
+
+[![Video Presentation](https://img.youtube.com/vi/IWK8rBLV6H4/0.jpg)](https://youtu.be/IWK8rBLV6H4)
+
 
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1G-9fGd6_507aWwMgHHmE1JI2cSEnG-Ht?usp=sharing)
